@@ -6,4 +6,5 @@ python-dotenv>=1.0
 gunicorn>=21.2
 drf-yasg
 python-json-logger
+openai
 

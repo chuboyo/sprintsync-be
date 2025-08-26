@@ -165,3 +165,5 @@ LOGGING = {
 
 AUTH_USER_MODEL = "users.CustomUser"
 
+OPENAI_API_KEY =  os.environ.get("OPENAI_KEY")
+
