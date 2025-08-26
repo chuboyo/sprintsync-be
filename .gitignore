@@ -1,0 +1,38 @@
+# Ignore hidden files
+
+.python-version
+**/.DS_Store
+
+Makefile
+locustfile.py
+**/DockerfileMac
+**denv
+**venv
+**download.jpeg
+**docker-run.sh
+
+# Ignore pytest cache
+**/.pytest_cache
+
+# Ignore pycache
+__pycache__/
+
+# Ignore shell scripts
+**/bootstrap.sh
+
+# Ignore env variables
+.env
+
+# ignore docker db files
+**/.docker/
+
+**/media/
+
+# tempoarily igonore terraform files
+infrastructure/
+
+# ignore zappa config
+**/zappa_settings.json
+
+# ignore local non-django test scripts
+**/test.py
