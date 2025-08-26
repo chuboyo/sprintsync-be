@@ -11,14 +11,12 @@ from .serializers import TaskSerializer, TaskDescriptionDraftSerializer
 class TaskViewSet(viewsets.ModelViewSet):
     serializer_class = TaskSerializer
     permission_classes = [permissions.IsAuthenticated]
+    queryset = Task.objects.all()
 
     def get_serializer_class(self):
         if self.action == "draft_description":
             return TaskDescriptionDraftSerializer
         return TaskSerializer
-
-    def get_queryset(self):
-        return Task.objects.filter(user=self.request.user).order_by('-created_at')
 
     @action(detail=False, methods=['get'])
     def daily_summary(self, request):
