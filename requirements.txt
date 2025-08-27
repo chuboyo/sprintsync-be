@@ -7,4 +7,5 @@ gunicorn>=21.2
 drf-yasg
 python-json-logger
 openai
+django-cors-headers
 

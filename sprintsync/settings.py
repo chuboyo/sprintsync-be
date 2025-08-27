@@ -43,9 +43,11 @@ INSTALLED_APPS = [
     'drf_yasg',
     'users',
     'tasks',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -166,4 +168,8 @@ LOGGING = {
 AUTH_USER_MODEL = "users.CustomUser"
 
 OPENAI_API_KEY =  os.environ.get("OPENAI_KEY")
+
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",
+]
 
