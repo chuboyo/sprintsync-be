@@ -16,7 +16,7 @@ API endpoints (example):
 - `GET/POST /api/v1/tasks/`
 - `GET/PUT/PATCH/DELETE /api/v1/tasks/{id}/`
 - `POST /api/v1/tasks/draft_description/` 
-- `POST /api/v1/tasks/daily_summary/` 
+- `GET /api/v1/tasks/daily_summary/` 
 
 # Implementation ⚙️
 Tech:
