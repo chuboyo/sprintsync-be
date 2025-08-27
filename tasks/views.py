@@ -20,9 +20,6 @@ class TaskViewSet(viewsets.ModelViewSet):
 
     @action(detail=False, methods=['get'])
     def daily_summary(self, request):
-        """
-        Returns total tasks and total duration for today's tasks for the current user.
-        """
         today = timezone.now().date()
         tasks_today =  (
             self.get_queryset()
