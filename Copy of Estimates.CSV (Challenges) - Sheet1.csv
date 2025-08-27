@@ -1,0 +1,34 @@
+Story,Task,Estimate min (hr),Estimate max (hr),Actual,Comment
+Initial Project Setup,Initialize 2 public GitHub repositories for a React.js frontend and a Django backend. Add readme.md files to both repositories and set up boilerplate code for both repositories.,2,4,2.1,"The initial project setup was relatively seamless.
+
+The React app was set up using create-react-app, and basic packages like axios and redux toolkit were installed. 
+
+The Django backend was set up using Docker and Docker Compose with an app service connecting to a PostgreSQL database."
+API autodocumentation and request log handling,Set up Swagger for API autodocumentation and create a middleware to log API requests,2,3,0.75,"API autodocumentation using Swagger was set up in Django with the `drf_yasg` package
+
+A middleware utility to log request details was set up with the help of the `python-json-logger` package and added to the application middlewares."
+User models and Authentication endpoints,"Create user models based on the requirements doc, set up endpoints for user registration and user login, and create tests for user endpoints.",1,1.5,1,"The user model inherits from the `AbstractUser` class in Django and extends a boolean field for administrators. 
+
+Two serializers were created to handle user registration and user authentication. 
+
+A viewset and router to handle all user-related CRUD actions were created. "
+Task models and task actions,"Create task models based on the requirements doc, set up endpoints for CRUD actions on tasks, and create tests for task endpoints.",1,1.5,0.9,"Created a Task model with fields for title, user(Foreign key with user model), description, created_at, and duration. The duration is autopopulated when the task is done.
+
+Created a task serializer, viewset, and router to handle task-related actions."
+Generating task descriptions from titles,Create an endpoint that generates task descriptions from their titles.,0.5,1,0.7,"Created a serializer that prompts GPT-4o-mini with the task title to get a task description.
+
+Created an action for generating draft descriptions in the `TaskViewSet ` ."
+Expose API,Configure Settings to expose API endpoints,0.2,0.5,0.2,Installed the `django-cors-headers` package and added the React localhost to the CORS allowed origins.
+Register and Login from React FrontEnd,Set up actions and reducers for authentication workflows and create screens for registration and Login.,1.5,2,1.5,"Created actions,  reducers, and screens for login and registration. 
+
+Created components for the NavBar, TaskList, Error Messages, and Loading State."
+Display and edit tasks,"Create a screen with a task list that supports in-line status change and edits for tasks. Create modals for creating tasks, AI suggestions,  and editing tasks.",2.5,3.5,4,"Created actions,  reducers, and screens for tasks. 
+
+Created a Modal component for AI suggestions, task creation, and editing tasks."
+Create charts to visualize daily summary,Create a pie chart component and create actions and reducers to get daily summary data.,1.5,2,1.5,"Created actions and reducers for daily summaries.
+
+Created a Pie chart component to display daily summaries.
+
+Repositioned buttons on the task screen."
+Clean up readme.md endpoints,Use the specific endpoints in the readme.md file instead of tentative values,0.5,0.5,0.3,Fixed documentation inconsistencies for both frontend and backend in their respective readme.md files
+Deploy the backend on AWS EC2,,,,,
