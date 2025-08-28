@@ -36,3 +36,6 @@ Deploy the backend on AWS EC2,Configure Docker & docker-compose to serve the app
 Added commands to collect static files in Docker and to start up the gunicorn server.
 
 Provisioned an EC2 instance on AWS and deployed the backend."
+Deploy the frontend on AWS amplify,Build and deploy the frontend using AWS amplify static hosting,1,1.2,1,"Successfully set up the api url as an env on Amplify.
+
+Successfully built and deployed the frontend on AWS Amplify."
