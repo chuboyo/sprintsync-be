@@ -26,3 +26,8 @@ RUN python -m venv /py && \
 
 #set path
 ENV PATH="/py/bin:$PATH"
+
+# Collect static files during build
+RUN python manage.py collectstatic --noinput
+
+CMD ["gunicorn", "--bind", "0.0.0.0:8000", "sprintsync.wsgi:application"]

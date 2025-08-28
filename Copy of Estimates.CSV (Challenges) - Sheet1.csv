@@ -31,4 +31,8 @@ Created a Pie chart component to display daily summaries.
 
 Repositioned buttons on the task screen."
 Clean up readme.md endpoints,Use the specific endpoints in the readme.md file instead of tentative values,0.5,0.5,0.3,Fixed documentation inconsistencies for both frontend and backend in their respective readme.md files
-Deploy the backend on AWS EC2,,,,,
+Deploy the backend on AWS EC2,Configure Docker & docker-compose to serve the application using gunicorn on AWS EC2.,2,3,2.5,"Created an nginx service in `docker-compose.yml` file and created an `nginx.conf ` to route incoming server traffic to the application service.
+
+Added commands to collect static files in Docker and to start up the gunicorn server.
+
+Provisioned an EC2 instance on AWS and deployed the backend."
