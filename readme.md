@@ -7,7 +7,7 @@ This repository contains the backend for the SprintSync challenge. It’s a Djan
 # Data 🗂️
 PostgreSQL is used locally via Docker. Configure DB settings through env vars:
 - `POSTGRES_DB`, `POSTGRES_USER`, `POSTGRES_PASSWORD`
-
+Production: `https://main.d1q09k6ak00k85.amplifyapp.com/`
 Demo Link: `https://drive.google.com/file/d/1sfRB7egPXaOTJMExquF-p7uga8TDtKqJ/view?usp=sharing`
 
 # Product 📦
